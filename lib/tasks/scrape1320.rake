@@ -9,7 +9,9 @@ task :scrape1320 do
     current_show_uri = page_string + i.to_s
     page = Nokogiri::HTML(open(current_show_uri)) 
     band = ""
-
+    show = ""
+    setlist = ""
+    
     if has_valid_title?(page)
       band = page.css(".release_attr_title")[1].text
       show = page.css(".release_attr_title")[0].text
