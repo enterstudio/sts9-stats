@@ -4,8 +4,8 @@
 <h3>Instructions</h3>
 <ul>
   <li>Clone repo</li>
-  <li>'''bundle install'''</li>
-  <li>'''rake scrape1320'''</li>
+  <li>bundle install</li>
+  <li>rake scrape1320</li>
 </ul>
 <h3>TODO</h3>
 <ul>
