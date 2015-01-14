@@ -11,7 +11,7 @@ task :scrape1320 do
     band = ""
     show = ""
     setlist = ""
-    
+
     if has_valid_title?(page)
       band = page.css(".release_attr_title")[1].text
       show = page.css(".release_attr_title")[0].text
@@ -29,6 +29,7 @@ end
 
 
 def has_valid_title? page
+  # make sure 2 title fields exist for band name and show date/venue
   page.css(".release_attr_title") && page.css(".release_attr_title").length > 1
 end
 
