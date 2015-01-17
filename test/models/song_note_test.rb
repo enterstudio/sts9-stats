@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TeaseTest < ActiveSupport::TestCase
+class SongNoteTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

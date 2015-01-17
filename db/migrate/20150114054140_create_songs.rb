@@ -3,8 +3,6 @@ class CreateSongs < ActiveRecord::Migration
     create_table :songs do |t|
       t.string :name
       t.text :description
-      t.boolean :is_cover
-      t.string :original_artist
 
       t.timestamps
     end

@@ -1,12 +1,10 @@
-class CreateShowSongs < ActiveRecord::Migration
+class CreateShowSetSongs < ActiveRecord::Migration
   def change
     create_table :show_songs do |t|
-      t.references :show, index: true
+      t.references :show_set, index: true
       t.references :song, index: true
-      t.string :segue_in
-      t.string :segue_out
-      t.boolean :unfinished
       t.time :length
+      t.integer :order
 
       t.timestamps
     end
