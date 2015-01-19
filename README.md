@@ -7,14 +7,13 @@ Clone repo<br />
 ```bundle install```<br />
 ```rake db:create```<br />
 ```rake db:migrate```<br />
-```rake scrape1320```
 </ul>
 <h3>TODO</h3>
 <ul>
-  <li>~~Data Modeling/Schemas (Shows, Venues, Songs, etc)~~</li>
-  <li>Scrapers for additional sites</li>
-  <li>Strategies for conflict resolution when different site setlists don't match</li>
+  <li><strike>Data Modeling/Schemas (Shows, Venues, Songs, etc)</strike></li>
+  <li>Initial Schema Migration</li>  
   <li>Testing</li>
-  <li>Pick a frontend framework (probably AngularJS)</li>
+  <li>Controllers</li>
+  <li>Scrapers for additional sites</li>  
 </ul>
 
