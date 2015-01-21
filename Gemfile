@@ -23,10 +23,32 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 gem 'nokogiri'
 gem 'mechanize'
+
+group :test do
+  gem 'simplecov', :require => false
+  #gem 'webmock'
+  gem 'database_cleaner'
+end
+
+group :test, :development do
+  gem 'spring'
+  # gem 'sqlite3'
+  gem 'binding_of_caller'
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spork'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+  gem 'guard-spork'
+  gem 'timecop'
+  gem 'rspec-mocks'
+  gem 'capybara'
+  # gem 'poltergeist'  
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
