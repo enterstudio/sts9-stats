@@ -37,7 +37,7 @@ group :test, :development do
   # gem 'sqlite3'
   gem 'binding_of_caller'
   gem 'pry'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.0'
   gem 'factory_girl_rails'
   gem 'guard'
   gem 'guard-rspec'
