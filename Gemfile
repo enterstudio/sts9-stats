@@ -23,8 +23,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'nokogiri'
-gem 'mechanize'
+gem 'nokogiri', '>= 1.16.5'
+gem 'mechanize', '>= 2.7.4'
 
 group :test do
   gem 'simplecov', :require => false
@@ -46,7 +46,7 @@ group :test, :development do
   gem 'guard-spork'
   gem 'timecop'
   gem 'rspec-mocks'
-  gem 'capybara'
+  gem 'capybara', '>= 2.5.0'
   # gem 'poltergeist'  
 end
 
